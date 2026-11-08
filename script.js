@@ -37,7 +37,7 @@ function setLang(newLang) {
   document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
   document.querySelectorAll('[data-en]').forEach(el => { el.textContent = el.dataset[lang]; });
   langBtn.textContent = lang === 'ar' ? 'English' : 'عربي';
-  document.title = lang === 'ar' ? 'ليان الرقيعي | مطوّرة ويب' : 'Layan Alriqiei | Web Developer';
+  document.title = lang === 'ar' ? 'ليان الرقيعي | مطوّرة ويب' : 'Layan Alruqayi | Web Developer';
   clearTimeout(timer); pIndex = 0; cIndex = 0; deleting = false; type();
   try { localStorage.setItem('lang', lang); } catch (e) {}
 }
